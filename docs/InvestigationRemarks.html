@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Investigator Remarks</title>
+
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="dist/css/adminlte.min.css">
+        <!-- daterange picker -->
+        <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+        <!-- iCheck for checkboxes and radio inputs -->
+        <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+        <!-- Bootstrap Color Picker -->
+        <link rel="stylesheet" href="plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+        <!-- Tempusdominus Bootstrap 4 -->
+        <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+        <!-- Select2 -->
+        <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+        <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+        <!-- Bootstrap4 Duallistbox -->
+        <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+        <!-- BS Stepper -->
+        <link rel="stylesheet" href="plugins/bs-stepper/css/bs-stepper.min.css">
+        <!-- dropzonejs -->
+        <link rel="stylesheet" href="plugins/dropzone/min/dropzone.min.css">
+        <style>
+            @media screen and (max-width: 480px) {
+                .SaveClass {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        </style>
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../../starter.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <!-- Messages Dropdown Menu -->
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="dist/img/Heritage_logo.png" alt="Heritage" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">Heritage</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/avatar2.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Users</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Menu
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="overflow-y: scroll; height:350px;">
+                                <li class="nav-item">
+                                    <a href="Dashboard.html" class="nav-link">
+                                        <p><b>Dashboard</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="QueryGenerateAndUpdate.html" class="nav-link">
+                                        <p><b>Query Generate & Update</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Investigation.html" class="nav-link">
+                                        <p><b>Investigation Request & View</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="InvestigationRemarks.html" class="nav-link">
+                                        <p><b>Investigator Remarks</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ClosedandRepuidatePreauth.html" class="nav-link">
+                                        <p><b>Closed & Repuidate Preauth</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="DocumentViewandUpload.html" class="nav-link">
+                                        <p><b>Document View & upload</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <p><b>Approval Repudiate</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="FileSendToInsurerForApproval.html" class="nav-link">
+                                        <p><b>File send to Insurer for Approval</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="IntimationPreAuth.html" class="nav-link">
+                                        <p><b>Intimation & Preauth Entry</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <p><b>64 VB Generate & update</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <p><b>Disease & ICD</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="DoctorandProcessorsReview.html" class="nav-link">
+                                        <p><b>Doctor/Processor Review</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="BillEntryAndDeduction.html" class="nav-link">
+                                        <p><b>Bill Entry & Deduction</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="EnhanceDischargeRequest.html" class="nav-link">
+                                        <p><b>Enhance & Discharge Request</b></p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <p><b>Hospital Details</b></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0"> Investigator Remarks</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active"> Investigator Remarks</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-warning">
+                        <div class="card-header">
+                            <h3 class="card-title">Investigator Remarks</h3>
+                            <button onclick="toggleVisibility()"
+                                style="background-color: #ffc107;color:black;border:none; float:right">Show/Hide</button>
+                        </div>
+
+                        <div class="card-body" id="iinvestigationremarks">
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>CCN No and Date</label>
+                                        <span id="iCCNNoandDate" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Insurance Company</label>
+                                        <span id="iInsurance Company" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>PolicyDetails</label>
+                                        <span id="iPolicyDetails" class="form-control"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Policy Number</label>
+                                        <span id="iPolicyNumber" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Policy Holder Name & Relation</label>
+                                        <span id="iPolicyHolderNameRelation" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Policy Type</label>
+                                        <span id="iPolicyType" class="form-control"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Patients status</label>
+                                        <span id="iPatientsstatus" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>DOA and Time of Admission</label>
+                                        <div class="input-group date" id="reservationdatetimeDOAAIV"
+                                            data-target-input="nearest">
+                                            <input type="text" id="iDOAIV" class="form-control datetimepicker-input"
+                                                data-target="#reservationdatetimeDOAAIV" />
+                                            <div class="input-group-append" data-target="#reservationdatetimeDOAAIV"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="bi bi-calendar2-date-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>DOD and Time of Discharge</label>
+                                        <div class="input-group date" id="reservationdatetimeDODAIV"
+                                            data-target-input="nearest">
+                                            <input type="text" id="iDODIV" class="form-control datetimepicker-input"
+                                                data-target="#reservationdatetimeDODAIV" />
+                                            <div class="input-group-append" data-target="#reservationdatetimeDODAIV"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="bi bi-calendar2-date-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>ICU Admission details</label>
+                                        <textarea typeof="text" id="iICUAdmissiondetails" class="form-control" rows="1"
+                                            cols="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Cashless/Non cashless</label>
+                                        <span id="iCashlessNoncashless" class="form-control"></span>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Pre-auth Amount Requested</label>
+                                        <span id="iPreauthAmountRequested" class="form-control"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Pre-auth Amount Approved</label>
+                                        <span id="iPreauthAmountApproved" class="form-control"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Diagnosis</label>
+                                        <input type="text" class="form-control" id="iDiagnosis" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Treatment</label>
+                                        <input type="text" class="form-control" id="iTreatment" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Hospital Name and Address</label>
+                                        <textarea typeof="text" id="iHospitalNameandAddress" readonly="" style=" margin: 4px, 4px;
+                                        padding: 4px;
+                                        font-size: 19px;
+                                        overflow-x: auto;
+                                        overflow-y: hidden;
+                                        white-space: nowrap;
+                                        width:100%;" cols="3" rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Registration No of Hospital & other details</label>
+                                        <textarea typeof="text" id="iRegistrationNoofHospitalotherdetails"
+                                            class="form-control" rows="1" cols="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Total No of Beds</label>
+                                        <input type="text" class="form-control" id="iTotalNoofBeds" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Accomodation Type</label>
+                                        <select class="select2" multiple="multiple" id="iAccomodationType"
+                                            data-placeholder="Select Type" style="width: 100%;">
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>Others</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Onset of symptoms</label>
+                                        <input type="text" class="form-control" id="iOnsetofsymptoms" />
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>1st consultation</label>
+                                        <div class="input-group date" id="reservationdatetimeFIRSTCONST"
+                                            data-target-input="nearest">
+                                            <input type="text" id="iFIRSTCONSTIV"
+                                                class="form-control datetimepicker-input"
+                                                data-target="#reservationdatetimeFIRSTCONST" />
+                                            <div class="input-group-append" data-target="#reservationdatetimeFIRSTCONST"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="bi bi-calendar2-date-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Referral doctor details</label>
+                                        <textarea typeof="text" id="iReferraldoctordetails" class="form-control"
+                                            rows="1" cols="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Initial treatment details</label>
+                                        <textarea typeof="text" id="iInitialtreatmentdetails" class="form-control"
+                                            rows="1" cols="3"></textarea>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Pre-Hosp Inv and Treatment details</label>
+                                        <textarea typeof="text" id="iPreHospInvandTreatmentdetails" class="form-control"
+                                            rows="1" cols="3"></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Treating Doctor</label>
+                                        <input type="text" class="form-control" id="iTreatingDoctor" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Room No / Bed No</label>
+                                        <input type="text" class="form-control" id="iRoomNoBedNo" />
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Post-Hosp Inv and Treatment details</label>
+                                        <textarea typeof="text" id="iPostHospInvandTreatmentdetails"
+                                            class="form-control" rows="1" cols="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Investigations suggesting Diagnosis</label>
+                                        <textarea typeof="text" id="iInvestigationssuggestingDiagnosis"
+                                            class="form-control" rows="2" cols="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Outcome</label>
+                                        <textarea typeof="text" id="iOutcome" class="form-control" rows="2"
+                                            cols="6"></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-body -->
+                    </div>
+                    <!-- card card-warning -->
+
+
+                    <div class="card card-warning">
+                        <div class="card-header">
+                            <h3 class="card-title">Checklist Details</h3>
+                            <button onclick="toggleVisibility2()"
+                                style="background-color: #ffc107;color:black;border:none; float:right">Show/Hide</button>
+                        </div>
+                        <!-- /.card-header -->
+                        <div id="ichecklist">
+                            <div class="row">
+                                <div class="col-md-6 col-md-lg">
+                                    <div class="card-body table-responsive p-0">
+                                        <table id="iDETAILS" class="table table-bordered">
+                                            <thead style="background-color:#f4f0ec">
+                                                <tr>
+                                                    <th>DETAILS</th>
+                                                    <th style="width:40%;">Please (&#10003) if Yes</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Inpatient Verification Report</td>
+                                                    <td><input type="checkbox" id="iInpatientVerificationReport"
+                                                            name="InpatientVerificationReport"
+                                                            name="InpatientVerificationReport"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tariff Card</td>
+                                                    <td><input type="checkbox" id="iTariffCardYes" name="TariffCard"
+                                                            value="TariffCard">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ICCU Available</td>
+                                                    <td><input type="checkbox" id="iICCUAvailable" name="ICCUAvailable"
+                                                            value="ICCUAvailable"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OT Available</td>
+                                                    <td><input type="checkbox" id="iOTAvailable" name="OTAvailable"
+                                                            value="OTAvailable"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        RMO Available Round the Clock
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iRMOAvailableRoundtheClock"
+                                                            name="RMOAvailableRoundtheClock"
+                                                            value="RMOAvailableRoundtheClock">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        ID Proof
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iIDProof" name="IDProof"
+                                                            value="IDProof">
+                                                    </td>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Name of Patient Matched
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iNameofPatientMatched"
+                                                            name="NameofPatientMatched" value="NameofPatientMatched">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Photo ID Matched
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iPhotoIDMatched"
+                                                            name="PhotoIDMatched" value="PhotoIDMatched">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Copies of IPD records
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCopiesofIPDrecords"
+                                                            name="CopiesofIPDrecords" value="CopiesofIPDrecords">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Change in Class of Accomodation
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iChangeinClassofAccomodation"
+                                                            name="ChangeinClassofAccomodation"
+                                                            value="ChangeinClassofAccomodation">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Wheather the hospital is registered or not
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox"
+                                                            id="iWheatherthehospitalisregisteredornot"
+                                                            name="Wheatherthehospitalisregisteredornot"
+                                                            value="Wheatherthehospitalisregisteredornot">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        MLC register check (For medico-legal cases)
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iMLCregistercheckFormedicolegalcases"
+                                                            name="MLCregistercheckFormedicolegalcases"
+                                                            value="MLCregistercheckFormedicolegalcases">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Copy of the MLC registration
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCopyoftheMLCregistration"
+                                                            name="CopyoftheMLCregistration"
+                                                            value="CopyoftheMLCregistration">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Check Bills and Receipts
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckBillsandReceipts"
+                                                            name="CheckBillsandReceipts" value="CheckBillsandReceipts">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Place of Lab (Whether in vicinity of hospital or not?)
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox"
+                                                            id="iPlaceofLabWhetherinvicinityofhospitalornot"
+                                                            name="PlaceofLabWhetherinvicinityofhospitalornot"
+                                                            value="PlaceofLabWhetherinvicinityofhospitalornot">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Checking of Lab Register
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckingofLabRegister"
+                                                            name="CheckingofLabRegister" value="CheckingofLabRegister">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Photocopy of Lab Register
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iPhotocopyofLabRegister"
+                                                            name="PhotocopyofLabRegister"
+                                                            value="PhotocopyofLabRegister">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Place of medicines's shop (wheather in vicinity of hospital or
+                                                        not?)
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iPlaceofmedicinessshop"
+                                                            name="Placeofmedicinessshop" value="Placeofmedicinessshop">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 col-md-lg">
+                                    <div class="card-body table-responsive p-0">
+                                        <table id="iDETAILS" class="table table-bordered">
+                                            <thead style="background-color:#f4f0ec">
+                                                <tr>
+                                                    <th>DETAILS</th>
+                                                    <th style="width:40%;">Please (&#10003) if Yes</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Checking of receipt book of medicines</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckingofreceiptbookofmedicines"
+                                                            name="Checkingofreceiptbookofmedicines"
+                                                            value="Checkingofreceiptbookofmedicines">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Photocopy of Receipt book</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iPhotocopyofReceiptbook"
+                                                            name="PhotocopyofReceiptbook"
+                                                            value="PhotocopyofReceiptbook">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Check Test done at Hospital</td>
+                                                    <td><input type="checkbox" id="iCheckTestdoneatHospital"
+                                                            name="CheckTestdoneatHospital"
+                                                            value="CheckTestdoneatHospital">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Check Test done at Diagnostic Center</td>
+                                                    <td><input type="checkbox" id="iCheckTestdoneatDiagnosticCenter"
+                                                            name="CheckTestdoneatDiagnosticCenter"
+                                                            value="CheckTestdoneatDiagnosticCenter"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Check Medicines dispensed from hospital</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckMedicinesdispensedfromhospital"
+                                                            name="CheckMedicinesdispensedfromhospital"
+                                                            value="CheckMedicinesdispensedfromhospital">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Check Medicines purchased from shop</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckMedicinespurchasedfromshop"
+                                                            name="CheckMedicinespurchasedfromshop"
+                                                            value="CheckMedicinespurchasedfromshop">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Check Signature patient verified</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCheckSignaturepatientverified"
+                                                            name="CheckSignaturepatientverified"
+                                                            value="CheckSignaturepatientverified">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Copy of OT Register Taken</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCopyofOTRegisterTaken"
+                                                            name="CopyofOTRegisterTaken" value="CopyofOTRegisterTaken">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Hospital's lab register verified</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iHospitalslabregisterverified"
+                                                            name="Hospitalslabregisterverified"
+                                                            value="Hospitalslabregisterverified">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Center's lab register verified</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCenterslabregisterverified"
+                                                            name="Centerslabregisterverified"
+                                                            value="Centerslabregisterverified">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Copy of Bills at Hospital Verified</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iCopyofBillsatHospitalVerified"
+                                                            name="CopyofBillsatHospitalVerified"
+                                                            value="CopyofBillsatHospitalVerified">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Copy of Bills at shop verified? Close to Hospital</td>
+                                                    <td>
+                                                        <input type="checkbox"
+                                                            id="iCopyofBillsatshopverifiedClosetoHospital"
+                                                            name="CopyofBillsatshopverifiedClosetoHospital"
+                                                            value="CopyofBillsatshopverifiedClosetoHospital">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Verification of treating doctors credentials</td>
+                                                    <td>
+                                                        <input type="checkbox"
+                                                            id="iVerificationoftreatingdoctorscredentials"
+                                                            name="Verificationoftreatingdoctorscredentials"
+                                                            value="Verificationoftreatingdoctorscredentials">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Indoor Case Papers - Completed</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iIndoorCasePapersCompleted"
+                                                            name="IndoorCasePapersCompleted"
+                                                            value="IndoorCasePapersCompleted">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Proper Maintanace of Case Sheet</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iProperMaintanaceofCaseSheet"
+                                                            name="ProperMaintanaceofCaseSheet"
+                                                            value="ProperMaintanaceofCaseSheet">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Document Received</td>
+                                                    <td>
+                                                        <input type="checkbox" id="iDocumentReceived"
+                                                            name="DocumentReceived" value="DocumentReceived">
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Whether Signature Matching - Doctor, claimant & Life insured
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="iWhetherSignatureMatching"
+                                                            name="WhetherSignatureMatching"
+                                                            value="WhetherSignatureMatching">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card card-warning -->
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Insured's Address Details </label>
+                                        <textarea typeof="text" id="iInsuredsAddressDetails" class="form-control"
+                                            rows="2" cols="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Insured's Interview</label>
+                                        <textarea typeof="text" id="iInsuredsInterview:" class="form-control" rows="2"
+                                            cols="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Opinion</label>
+                                        <textarea typeof="text" id="iOpinion" class="form-control" rows="2"
+                                            cols="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+
+                            <div class="row" style="max-height: fit-content;">
+                                <div class="col-sm-8">
+                                    <label for="DOCUMENTS">LIST OF COLLECTED DOCUMENTS</label>
+                                    <link href="src/fSelect.css" rel="stylesheet">
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <script src="src/fSelect.js"></script>
+                                    <script>
+                                        (function ($) {
+                                            $(function () {
+                                                window.fs_test = $('.COLLECTEDDOCUMENTS').fSelect();
+                                            });
+                                        })(jQuery);
+                                    </script>
+                                    <form>
+                                        <select class="COLLECTEDDOCUMENTS" multiple="multiple">
+                                            <option id="id" value="id">Photograph, Copy of pan card and Voter ID of
+                                                Claimant</option>
+                                            <option id="test" value="test">Copy of Diff pathological test etc
+                                            </option>
+                                            <option id="paper" value="paper">Copy of indoor case papers,
+                                                investigation
+                                                papers,
+                                                discharge summary</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <!-- col-sm-8 -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-body -->
+
+                <div class="card card-warning">
+                    <div class="card-header" style="width:50%">
+                        <h3 class="card-title" style="font-weight: bold;">REPORT GENERATED BY</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" style="max-height: fit-content;">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <span id="iName" class="form-control"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Signature</label>
+                                    <input type="text" class="form-control" id="iSignature">
+                                </div>
+                                <div class="form-group">
+                                    <label>Place</label>
+                                    <input type="text" class="form-control" id="iPlace">
+                                </div>
+                                <div class="form-group">
+                                    <label>Latitude and Longitude of Hospital</label>
+                                    <span id="iLatitudeandLongitudeofHospital" class="form-control"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-warning -->
+
+
+                <div class="row" style="max-height:fit-content;">
+                    <div class="col-md-6 col-lg-6"></div>
+                    <div class="col-md-6 col-lg-6 mb-3">
+                        <div class="text-center">
+                            <button id="btnSaveApproved" class="btn btn-primary"
+                                style="width:30%; background-color: green;" onclick="#">Save & Approved</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+        </div>
+        <!-- Default to the left -->
+        <strong></strong>
+    </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <!--script src="../../dist/js/demo.js"></script>-->
+    <!-- Page specific script -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <!--script src="../../dist/js/demo.js"></script-->
+    <!-- Page specific script -->
+    <script>
+        // Function to toggle visibility
+        function toggleVisibility() {
+            var element = document.getElementById("iinvestigationremarks");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block"; // Show the element
+            } else {
+                element.style.display = "none"; // Hide the element
+            }
+        }
+    </script>
+    <script>
+        // Function to toggle visibility
+        function toggleVisibility2() {
+            var element = document.getElementById("ichecklist");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block"; // Show the element
+            } else {
+                element.style.display = "none"; // Hide the element
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var url = window.location;
+            var element = $('ul.nav a').filter(function () {
+                return this.href == url || url.href.indexOf(this.href) == 0;
+            }).addClass('active').parent().parent().addClass('in').parent();
+            if (element.is('li')) {
+                element.addClass('active');
+            }
+        });
+
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date picker
+            $('#reservationdate').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdateDOA').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdateDOD').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdate1').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdate2').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdate3').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdate4').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdateDateDoctorReview').datetimepicker({
+                format: 'L'
+            });
+
+
+            $('#reservationdatetimeDOA').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdatetimeDODD').datetimepicker({
+                format: 'L'
+            });
+
+
+
+            //Date and time picker
+
+            $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeDOA').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeACDT').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeDODD').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeCLDT').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeRDTA').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeRCDTA').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeRRDTA').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeFSIA').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeQGDT').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeRDT').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeRRID').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeID').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeDOAAIV').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeDODAIV').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            $('#reservationdatetimeFIRSTCONST').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+            //Date range picker
+            $('#reservation').daterangepicker()
+
+            $('#iDateRange').daterangepicker()
+
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY hh:mm A'
+                }
+            })
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function (start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            )
+
+            //Timepicker
+            $('#timepicker').datetimepicker({
+                format: 'LT'
+            })
+
+            //Bootstrap Duallistbox
+            $('.duallistbox').bootstrapDualListbox()
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            $('.my-colorpicker2').on('colorpickerChange', function (event) {
+                $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+            })
+
+            $("input[data-bootstrap-switch]").each(function () {
+                $(this).bootstrapSwitch('state', $(this).prop('checked'));
+            })
+
+        })
+        // BS-Stepper Init
+        document.addEventListener('DOMContentLoaded', function () {
+            window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+        })
+
+        // DropzoneJS Demo Code Start
+        Dropzone.autoDiscover = false
+
+        // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+        var previewNode = document.querySelector("#template")
+        previewNode.id = ""
+        var previewTemplate = previewNode.parentNode.innerHTML
+        previewNode.parentNode.removeChild(previewNode)
+
+        var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+            url: "/target-url", // Set the url
+            thumbnailWidth: 80,
+            thumbnailHeight: 80,
+            parallelUploads: 20,
+            previewTemplate: previewTemplate,
+            autoQueue: false, // Make sure the files aren't queued until manually added
+            previewsContainer: "#previews", // Define the container to display the previews
+            clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+        })
+
+        myDropzone.on("addedfile", function (file) {
+            // Hookup the start button
+            file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file) }
+        })
+
+        // Update the total progress bar
+        myDropzone.on("totaluploadprogress", function (progress) {
+            document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+        })
+
+        myDropzone.on("sending", function (file) {
+            // Show the total progress bar when upload starts
+            document.querySelector("#total-progress").style.opacity = "1"
+            // And disable the start button
+            file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+        })
+
+        // Hide the total progress bar when nothing's uploading anymore
+        myDropzone.on("queuecomplete", function (progress) {
+            document.querySelector("#total-progress").style.opacity = "0"
+        })
+
+        // Setup the buttons for all transfers
+        // The "add files" button doesn't need to be setup because the config
+        // `clickable` has already been specified.
+        document.querySelector("#actions .start").onclick = function () {
+            myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+        }
+        document.querySelector("#actions .cancel").onclick = function () {
+            myDropzone.removeAllFiles(true)
+        }
+        // DropzoneJS Demo Code End
+    </script>
+    <script>
+        $(function () {
+            bsCustomFileInput.init();
+        });
+    </script>
+</body>
+
+</html>
